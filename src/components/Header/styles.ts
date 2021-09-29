@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const theme = {
   yellow: '#cdca69',
   dsoulsFont: 'OptimusPrincepsSemiBold',
-  arcadeFont: 'ARCADECLASSIC',
 };
 
 export const Container = styled.div`
@@ -22,12 +21,13 @@ export const Container = styled.div`
     position: relative;
     top: 2px;
     right: 2px;
+    color: ${theme.yellow};
   }
 
   span {
-    font-family: ${theme.arcadeFont}, sans-serif;
-    letter-spacing: 0.3rem;
-    font-size: 24px;
+    font-family: ${theme.dsoulsFont}, sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 18px;
 
     &:hover {
       cursor: pointer;
@@ -38,15 +38,28 @@ export const Container = styled.div`
   nav {
     display: flex;
     margin-left: auto;
-    font-size: 18px;
+    align-items: center;
+    font-size: 16px;
     font-family: ${theme.dsoulsFont}, sans-serif;
 
     & > p {
-      margin-left: 120px;
+      margin-left: 40px;
 
       &:hover {
         cursor: pointer;
         color: ${theme.yellow};
+      }
+    }
+
+    .social {
+      svg {
+        &:hover {
+          color: white;
+          cursor: pointer;
+        }
+      }
+      & > a {
+        margin-left: 15px;
       }
     }
   }

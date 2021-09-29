@@ -1,5 +1,7 @@
 import React from 'react';
 import {
+  AiFillGithub,
+  AiFillLinkedin,
   AiOutlineFundProjectionScreen,
   AiOutlinePhone,
   AiOutlineUser,
@@ -15,14 +17,25 @@ export const Header: React.FC = () => (
     <span>.GBL</span>
     <nav>
       <p>
-        <AiOutlineFundProjectionScreen /> projetos
+        <AiOutlineFundProjectionScreen /> .projects
       </p>
       <p>
-        <AiOutlineUser /> sobre
+        <AiOutlineUser /> .about
       </p>
       <p>
-        <AiOutlinePhone /> contato
+        <AiOutlinePhone /> .contact
       </p>
+      <div className="social">
+        <a href="https://github.com/matheusgbl" target="_blank" rel="noreferrer">
+          <AiFillGithub size={24} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/matheusgbl/"
+          target="_blank"
+          rel="noreferrer">
+          <AiFillLinkedin size={24} />
+        </a>
+      </div>
     </nav>
   </Container>
 );
