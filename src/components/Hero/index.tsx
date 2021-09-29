@@ -12,9 +12,9 @@ export const Hero: React.FC = () => {
     <Container className="hero">
       <TextContent className="hero_container">
         <p className="hero_text text-xl">
-          Hello 👋, <br /> My name is Matheus, i&apos;m an full stack dev
+          Hello 👋, <br /> My name is Matheus, i&apos;m an full-stack web developer
           <br />
-          Software developer student at Trybe 💚
+          and currently a student at Trybe 💚
         </p>
         <div className="praise_the_sun">
           <h3 id="continue">To continue,</h3>

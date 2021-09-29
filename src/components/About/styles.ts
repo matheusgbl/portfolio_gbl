@@ -6,11 +6,18 @@ const theme = {
 };
 
 export const Container = styled.section`
-  display: flex;
   height: 60vh;
+
   h2 {
+    width: 100%;
     color: ${theme.yellow};
     font-size: 60px;
     font-family: ${theme.dsoulsFont};
   }
+`;
+
+export const AboutText = styled.div`
+  display: flex;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
 `;
