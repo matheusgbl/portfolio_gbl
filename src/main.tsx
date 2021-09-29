@@ -1,5 +1,4 @@
 import 'virtual:windi.css';
-import './index.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

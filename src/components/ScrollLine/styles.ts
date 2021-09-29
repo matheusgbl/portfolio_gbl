@@ -11,7 +11,7 @@ export const Container = styled.section`
     position: fixed;
     top: 50vh;
     bottom: 0;
-    left: calc(25vw - 10rem);
+    left: calc(20vw - 10rem);
     z-index: 2;
     width: 1px;
     background: ${theme.yellow}
@@ -23,7 +23,7 @@ export const Container = styled.section`
     top: 50vh;
     height: 100vh;
     bottom: 0;
-    left: calc(25vw - 10rem);
+    left: calc(20vw - 10rem);
     z-index: 2;
     width: 1px;
     background: ${theme.yellow};
@@ -33,7 +33,7 @@ export const Container = styled.section`
   .scroll-target {
     position: fixed;
     top: calc(50vh - 8px);
-    left: calc(25vw - 10rem - 4px);
+    left: calc(20vw - 10rem - 4px);
     width: 9px;
     height: 9px;
     z-index: 2;

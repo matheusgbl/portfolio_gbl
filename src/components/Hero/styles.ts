@@ -14,15 +14,14 @@ export const Container = styled.div`
 
   h2 {
     line-height: 2.5rem;
-    max-width: 550px;
   }
 `;
 
-export const TextContent = styled.section`
+export const TextContent = styled.div`
   justify-content: center;
 
   h2 {
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.05rem;
   }
 
   h3 {

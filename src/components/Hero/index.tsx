@@ -11,12 +11,11 @@ export const Hero: React.FC = () => {
   return (
     <Container className="hero">
       <TextContent className="hero_container">
-        <h2 className="hero_h2">
-          Hi stranger 👋, <br /> Me chamo Matheus, um entusiasta no desenvolvimento front
-          end!
+        <p className="hero_text text-xl">
+          Hello 👋, <br /> My name is Matheus, i&apos;m an full stack dev
           <br />
-          Atualmente estudante da Trybe! 💚
-        </h2>
+          Software developer student at Trybe 💚
+        </p>
         <div className="praise_the_sun">
           <h3 id="continue">To continue,</h3>
           <h3 id="please">Please,</h3>

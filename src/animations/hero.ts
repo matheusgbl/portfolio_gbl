@@ -6,7 +6,7 @@ export default function heroIntro() {
   gsap
     .timeline()
     .from('.hero_container', { duration: 1, opacity: 0 })
-    .from('.hero_h2', { opacity: 0, scale: 0, ease: 'power2.inOut' })
+    .from('.hero_text', { opacity: 0, scale: 0, ease: 'power2.inOut' })
     .from('.praise_the_sun h3', {
       y: 100,
       opacity: 0,
