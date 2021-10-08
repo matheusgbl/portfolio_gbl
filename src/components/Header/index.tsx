@@ -14,16 +14,16 @@ export const Header: React.FC = () => (
     <div className="bg-header">
       <div className="bg-default" />
     </div>
-    <span>.GBL</span>
+    <span>GBL</span>
     <nav>
       <p>
-        <AiOutlineFundProjectionScreen /> .projects
+        <AiOutlineFundProjectionScreen /> projects
       </p>
       <p>
-        <AiOutlineUser /> .about
+        <AiOutlineUser /> about
       </p>
       <p>
-        <AiOutlinePhone /> .contact
+        <AiOutlinePhone /> contact
       </p>
       <div className="social">
         <a href="https://github.com/matheusgbl" target="_blank" rel="noreferrer">

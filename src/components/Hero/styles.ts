@@ -18,7 +18,12 @@ export const Container = styled.div`
 `;
 
 export const TextContent = styled.div`
-  justify-content: center;
+  margin-top: 50px;
+
+  p {
+    font-size: 20px;
+    line-height: 2rem;
+  }
 
   h2 {
     letter-spacing: 0.05rem;
@@ -28,25 +33,27 @@ export const TextContent = styled.div`
     line-height: 3.2rem;
   }
 
-  #continue {
-    margin-top: 2rem;
-    font-size: 36px;
-    letter-spacing: 0.5rem;
-  }
+  .praise_the_sun {
+    #continue {
+      margin-top: 2rem;
+      font-size: 36px;
+      letter-spacing: 0.5rem;
+    }
 
-  #please {
-    margin-left: 2rem;
-    font-size: 44px;
-    letter-spacing: 0.5rem;
-  }
+    #please {
+      margin-left: 2rem;
+      font-size: 44px;
+      letter-spacing: 0.5rem;
+    }
 
-  #praise {
-    margin-left: 2rem;
-    font-size: 44px;
-    letter-spacing: 0.5rem;
-    width: 100%;
-    overflow: hidden;
-    color: ${theme.yellow};
+    #praise {
+      margin-left: 2rem;
+      font-size: 44px;
+      letter-spacing: 0.5rem;
+      width: 100%;
+      overflow: hidden;
+      color: ${theme.yellow};
+    }
   }
 `;
 
@@ -54,6 +61,11 @@ export const PraiseScroll = styled.div`
   position: absolute;
   bottom: 5%;
   left: 50%;
+
+  img {
+    width: 120px;
+    margin-left: 22px;
+  }
 
   svg {
     width: 100%;

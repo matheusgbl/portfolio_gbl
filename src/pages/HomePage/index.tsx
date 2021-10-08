@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { About } from '../../components/About';
 import { Header } from '../../components/Header';
 import { Hero } from '../../components/Hero';
+import { HomeProjects } from '../../components/HomeProjects';
 import { ScrollLine } from '../../components/ScrollLine';
 import { Container, Content } from './styles';
 
@@ -13,7 +13,7 @@ export const HomePage: React.FC = () => {
       <Content>
         <ScrollLine />
         <Hero />
-        <About />
+        <HomeProjects />
       </Content>
     </Container>
   );

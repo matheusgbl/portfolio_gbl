@@ -10,7 +10,7 @@ export const Container = styled.div`
   background: linear-gradient(180deg, #0e1212 4rem, rgba(14, 18, 18, 0));
   color: #fff;
   display: flex;
-  padding: 20px 230px;
+  padding: 20px 150px;
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +27,7 @@ export const Container = styled.div`
   span {
     font-family: ${theme.dsoulsFont}, sans-serif;
     letter-spacing: 0.2rem;
-    font-size: 18px;
+    font-size: 20px;
 
     &:hover {
       cursor: pointer;
@@ -39,7 +39,8 @@ export const Container = styled.div`
     display: flex;
     margin-left: auto;
     align-items: center;
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 0.1rem;
     font-family: ${theme.dsoulsFont}, sans-serif;
 
     & > p {

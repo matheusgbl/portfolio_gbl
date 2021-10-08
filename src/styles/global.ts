@@ -2,6 +2,11 @@ import { createGlobalStyle } from 'styled-components';
 
 import loading from '../assets/loading.gif';
 
+const theme = {
+  yellow: '#cdca69',
+  dsoulsFont: 'OptimusPrincepsSemiBold',
+};
+
 export default createGlobalStyle`
   * {
     margin: 0;
@@ -18,6 +23,10 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+
+  h1, h2 {
+    font-family: ${theme.dsoulsFont}, sans-serif;
   }
 
   .loading {
