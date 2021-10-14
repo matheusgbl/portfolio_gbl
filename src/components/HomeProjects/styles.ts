@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const theme = {
-  yellow: '#cdca69',
+  yellow: '#F2C36B',
   dsoulsFont: 'OptimusPrincepsSemiBold',
 };
 
@@ -12,8 +12,6 @@ const card = {
 };
 
 export const Container = styled.section`
-  height: 65vh;
-
   h2 {
     width: 100%;
     color: ${theme.yellow};
@@ -29,38 +27,7 @@ export const ProjectsCard = styled.div`
   flex-wrap: wrap;
 `;
 
-export const FirstCard = styled.div`
-  background-color: ${card.bgCard};
-  border-radius: ${card.rdCard};
-  width: 450px;
-  height: 230px;
-  transition: all 0.5s;
-
-  div {
-    background-color: #2d333b;
-    padding: 8px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-
-    .pokedex_logo {
-      width: 150px;
-      margin: auto;
-      display: flex;
-    }
-  }
-
-  a {
-    img {
-      display: flex;
-      margin: auto;
-      border-radius: 10px;
-      width: 450px;
-    }
-  }
-  &:hover {
-    transform: scale(1.03);
-  }
-`;
+export const FirstCard = styled.div``;
 
 export const SecondCard = styled.div`
   background-color: ${card.bgCard};
@@ -96,6 +63,7 @@ export const SecondCard = styled.div`
     transform: scale(1.03);
   }
 `;
+
 export const ThirdCard = styled.div`
   background-color: ${card.bgCard};
   border-radius: ${card.rdCard};

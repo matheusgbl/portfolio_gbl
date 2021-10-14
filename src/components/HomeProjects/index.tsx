@@ -1,30 +1,33 @@
 import React from 'react';
-import { AiOutlineShoppingCart } from 'react-icons/ai';
 
-import gobarber from '../../assets/gobarberLogo.png';
-import gobarberPrint from '../../assets/gobarberPrint.png';
-import pokedex from '../../assets/pokedex.png';
-import pokedexPrint from '../../assets/pokedexPrint.png';
-import undefinedShop from '../../assets/undefinedShop.png';
+import artorias from '../../assets/artorias.png';
+import pokedexMockup from '../../assets/pokedexMockup.png';
+import solaire from '../../assets/solaire.png';
+import { ProjectCard } from '../ProjectCard';
 import { Container, FirstCard, ProjectsCard, SecondCard, ThirdCard } from './styles';
 
 export const HomeProjects: React.FC = () => {
   return (
     <Container className="home-projects">
-      <h2>Favorite Projects</h2>
-      <ProjectsCard className="home-projects-cards flex m-4">
+      <h2>favorite projects</h2>
+      <ProjectsCard className="home-projects-cards">
         <FirstCard>
-          <div>
-            <img className="pokedex_logo" src={pokedex} alt="pokedex logo" />
-          </div>
-          <a
-            href="https://github.com/matheusgbl/pokedex"
-            target="_blank"
-            rel="noreferrer">
-            <img src={pokedexPrint} alt="pokedex app" />
-          </a>
+          <ProjectCard
+            title="POKÉDEX"
+            techs={['React, ', 'Typescript, ', 'NextJS.']}
+            description="Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book."
+            link="https://github.com/matheusgbl/pokedex"
+            label1="Web application"
+            label2="Pokémon info card"
+            label3="Regions filter"
+            img1={pokedexMockup}
+            img2={artorias}
+            img3={solaire}
+          />
         </FirstCard>
-        <SecondCard>
+        {/* <SecondCard>
           <div>
             <img className="gobarber_logo" src={gobarber} alt="gobarber logo" />
           </div>
@@ -47,7 +50,7 @@ export const HomeProjects: React.FC = () => {
             rel="noreferrer">
             <img src={undefinedShop} alt="gobarber app" />
           </a>
-        </ThirdCard>
+        </ThirdCard> */}
       </ProjectsCard>
     </Container>
   );

@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import loading from '../assets/loading.gif';
 
 const theme = {
-  yellow: '#cdca69',
+  yellow: '#F2C36B',
   dsoulsFont: 'OptimusPrincepsSemiBold',
 };
 
@@ -20,6 +20,10 @@ export default createGlobalStyle`
     color: #fff;
     -webkit-font-smoothing: antialiased;
   }
+
+  html, body {
+  height: 100%;
+}
 
   button {
     cursor: pointer;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const theme = {
-  yellow: '#cdca69',
+  yellow: '#F2C36B',
   dsoulsFont: 'OptimusPrincepsSemiBold',
   arcadeFont: 'ARCADECLASSIC',
 };
@@ -9,7 +9,7 @@ const theme = {
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  height: 120vh;
+  height: 100vh;
   font-family: ${theme.dsoulsFont};
 
   h2 {
@@ -60,7 +60,7 @@ export const TextContent = styled.div`
 export const PraiseScroll = styled.div`
   position: absolute;
   bottom: 5%;
-  left: 50%;
+  left: 45.5%;
 
   img {
     width: 120px;

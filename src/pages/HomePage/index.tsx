@@ -1,9 +1,9 @@
 import React from 'react';
 
+// import { Character } from '../../components/Character';
 import { Header } from '../../components/Header';
 import { Hero } from '../../components/Hero';
 import { HomeProjects } from '../../components/HomeProjects';
-import { ScrollLine } from '../../components/ScrollLine';
 import { Container, Content } from './styles';
 
 export const HomePage: React.FC = () => {
@@ -11,8 +11,8 @@ export const HomePage: React.FC = () => {
     <Container>
       <Header />
       <Content>
-        <ScrollLine />
         <Hero />
+        {/* <Character /> */}
         <HomeProjects />
       </Content>
     </Container>
