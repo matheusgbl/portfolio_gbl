@@ -36,19 +36,21 @@ export const ProjectCard: React.FC<CardProps> = ({
 }: CardProps) => {
   const [value, setValue] = useState(label1);
   const [img, setImg] = useState(img1);
+  const [bg, setBg] = useState(0);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue((event.target as HTMLInputElement).value);
     if (event.target.value === label1) {
       setImg(img1);
+      setBg(1);
     } else if (event.target.value === label2) {
       setImg(img2);
+      setBg(2);
     } else {
       setImg(img3);
+      setBg(1);
     }
   };
-
-  console.log(img);
 
   return (
     <Container>
@@ -134,9 +136,15 @@ export const ProjectCard: React.FC<CardProps> = ({
             </RadioSelector>
           </div>
         </CardFirstContent>
-        <CardSecondContent>
+        <CardSecondContent
+          style={{ backgroundColor: `${bg === 1 ? '#6094aa' : '#77411D'}` }}>
           <div className="card__second-content__info">
-            <img src={img} alt="Project preview" />
+            <img
+              sizes="50vw"
+              className={`project-image-${value}`}
+              src={img}
+              alt="Project preview"
+            />
           </div>
         </CardSecondContent>
       </Card>

@@ -1,56 +1,70 @@
 import React from 'react';
 
-import artorias from '../../assets/artorias.png';
-import pokedexMockup from '../../assets/pokedexMockup.png';
-import solaire from '../../assets/solaire.png';
+import barberDashboard from '../../assets/barberDashboard.png';
+import cards from '../../assets/cards.svg';
+import undefConfirmation from '../../assets/cartConfirm.png';
+import undefCart from '../../assets/cartProducts.png';
+import gobarberlogin from '../../assets/gobarberlogin.png';
+import pokedexMainPage from '../../assets/pokedexMainPage.png';
+import pokeInfo from '../../assets/pokeInfo.png';
+import undefShop from '../../assets/undef_shop.png';
+import userDashboard from '../../assets/userDashboard.png';
 import { ProjectCard } from '../ProjectCard';
 import { Container, FirstCard, ProjectsCard, SecondCard, ThirdCard } from './styles';
 
 export const HomeProjects: React.FC = () => {
   return (
-    <Container className="home-projects">
+    <Container>
       <h2>favorite projects</h2>
-      <ProjectsCard className="home-projects-cards">
+      <ProjectsCard>
         <FirstCard>
           <ProjectCard
             title="POKÉDEX"
-            techs={['React, ', 'Typescript, ', 'NextJS.']}
+            techs={['Typescript, ', 'React, ', 'NextJS.']}
             description="Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of type
               and scrambled it to make a type specimen book."
             link="https://github.com/matheusgbl/pokedex"
-            label1="Web application"
-            label2="Pokémon info card"
-            label3="Regions filter"
-            img1={pokedexMockup}
-            img2={artorias}
-            img3={solaire}
+            label1="Web app"
+            label2="info card"
+            label3="Region filter"
+            img1={pokedexMainPage}
+            img2={pokeInfo}
+            img3={cards}
           />
         </FirstCard>
-        {/* <SecondCard>
-          <div>
-            <img className="gobarber_logo" src={gobarber} alt="gobarber logo" />
-          </div>
-          <a
-            href="https://github.com/matheusgbl/gobarber"
-            target="_blank"
-            rel="noreferrer">
-            <img src={gobarberPrint} alt="gobarber app" />
-          </a>
+        <SecondCard>
+          <ProjectCard
+            title="GOBARBER"
+            techs={['Typescript, ', 'React, ', 'NodeJS, ', 'React Native.']}
+            description="Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book."
+            link="https://github.com/matheusgbl/gobarber"
+            label1="Login screen"
+            label2="user dashboard"
+            label3="barber dashboard"
+            img1={gobarberlogin}
+            img2={userDashboard}
+            img3={barberDashboard}
+          />
         </SecondCard>
         <ThirdCard>
-          <div>
-            <AiOutlineShoppingCart size={24} />
-            <span>Undefined Shop</span>
-            <AiOutlineShoppingCart size={24} />
-          </div>
-          <a
-            href="https://github.com/matheusgbl/trybe_projects"
-            target="_blank"
-            rel="noreferrer">
-            <img src={undefinedShop} alt="gobarber app" />
-          </a>
-        </ThirdCard> */}
+          <ProjectCard
+            title="UNDEF. SHOP"
+            techs={['Javascript, ', 'React.']}
+            description="Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book."
+            link="https://github.com/matheusgbl/trybe_projects/tree/master/online_store"
+            label1="home page"
+            label2="cart"
+            label3="order confirmation"
+            img1={undefShop}
+            img2={undefCart}
+            img3={undefConfirmation}
+          />
+        </ThirdCard>
       </ProjectsCard>
     </Container>
   );
