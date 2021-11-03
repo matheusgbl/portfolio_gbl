@@ -6,7 +6,7 @@ const theme = {
 };
 
 export const Container = styled.section`
-  margin-top: 10rem;
+  margin-top: 5rem;
   h2 {
     width: 100%;
     color: ${theme.yellow};
@@ -17,7 +17,7 @@ export const Container = styled.section`
 `;
 
 export const ProjectsCard = styled.div`
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
+import projectsAnimation from '../../animations/projects';
 import barberDashboard from '../../assets/barberDashboard.png';
 import cards from '../../assets/cards.svg';
 import undefConfirmation from '../../assets/cartConfirm.png';
@@ -13,11 +14,14 @@ import { ProjectCard } from '../ProjectCard';
 import { Container, FirstCard, ProjectsCard, SecondCard, ThirdCard } from './styles';
 
 export const HomeProjects: React.FC = () => {
+  useEffect(() => {
+    projectsAnimation();
+  }, []);
   return (
-    <Container>
-      <h2>favorite projects</h2>
-      <ProjectsCard>
-        <FirstCard>
+    <Container className="home-projects">
+      <h2 className="home-projects-text">favorite projects</h2>
+      <ProjectsCard className="home-projects-cards">
+        <FirstCard className="card-1">
           <ProjectCard
             title="POKÉDEX"
             techs={['Typescript, ', 'React, ', 'NextJS.']}
@@ -33,7 +37,7 @@ export const HomeProjects: React.FC = () => {
             img3={cards}
           />
         </FirstCard>
-        <SecondCard>
+        <SecondCard className="card-2">
           <ProjectCard
             title="GOBARBER"
             techs={['Typescript, ', 'React, ', 'NodeJS, ', 'React Native.']}
@@ -49,7 +53,7 @@ export const HomeProjects: React.FC = () => {
             img3={barberDashboard}
           />
         </SecondCard>
-        <ThirdCard>
+        <ThirdCard className="card-3">
           <ProjectCard
             title="UNDEF. SHOP"
             techs={['Javascript, ', 'React.']}

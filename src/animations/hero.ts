@@ -23,7 +23,6 @@ export default function heroIntro() {
       start: 'top center',
       end: 'bottom 150px',
       scrub: true,
-      markers: true,
       id: 'scroll',
     },
   });
