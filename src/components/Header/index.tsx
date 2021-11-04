@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiOutlineFundProjectionScreen,
-  AiOutlinePhone,
-  AiOutlineUser,
-} from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlinePhone } from 'react-icons/ai';
 
 import { Container } from './styles';
 
@@ -14,17 +8,11 @@ export const Header: React.FC = () => (
     <div className="bg-header">
       <div className="bg-default" />
     </div>
-    <span>GBL</span>
+    <span>.GBL</span>
     <nav>
-      <p>
-        <AiOutlineFundProjectionScreen /> projects
-      </p>
-      <p>
-        <AiOutlineUser /> about
-      </p>
-      <p>
+      <a href="mailto:matheusluiz.barbosa@outlook.com">
         <AiOutlinePhone /> contact
-      </p>
+      </a>
       <div className="social">
         <a href="https://github.com/matheusgbl" target="_blank" rel="noreferrer">
           <AiFillGithub size={24} />

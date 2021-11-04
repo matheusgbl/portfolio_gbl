@@ -10,6 +10,7 @@ import pokedexMainPage from '../../assets/pokedexMainPage.png';
 import pokeInfo from '../../assets/pokeInfo.png';
 import undefShop from '../../assets/undef_shop.png';
 import userDashboard from '../../assets/userDashboard.png';
+import { InverseProjectCard } from '../InverseProjectCard';
 import { ProjectCard } from '../ProjectCard';
 import { Container, FirstCard, ProjectsCard, SecondCard, ThirdCard } from './styles';
 
@@ -25,9 +26,8 @@ export const HomeProjects: React.FC = () => {
           <ProjectCard
             title="POKÉDEX"
             techs={['Typescript, ', 'React, ', 'NextJS.']}
-            description="Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of type
-              and scrambled it to make a type specimen book."
+            description="Pokedex application, build with Typescript and NextJS,
+            using the PokeAPI and some material design components."
             link="https://github.com/matheusgbl/pokedex"
             label1="Web app"
             label2="info card"
@@ -38,12 +38,12 @@ export const HomeProjects: React.FC = () => {
           />
         </FirstCard>
         <SecondCard className="card-2">
-          <ProjectCard
+          <InverseProjectCard
             title="GOBARBER"
             techs={['Typescript, ', 'React, ', 'NodeJS, ', 'React Native.']}
-            description="Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of type
-              and scrambled it to make a type specimen book."
+            description="Fullstack application, built during the Rocketseat bootcamp.
+            This application is made for barbers and users who want to schedule services
+            related to barber shop."
             link="https://github.com/matheusgbl/gobarber"
             label1="Login screen"
             label2="user dashboard"
@@ -57,9 +57,9 @@ export const HomeProjects: React.FC = () => {
           <ProjectCard
             title="UNDEF. SHOP"
             techs={['Javascript, ', 'React.']}
-            description="Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of type
-              and scrambled it to make a type specimen book."
+            description="Market application, build using the API from Mercado Livre.
+            One of the projects carried out during the course at Trybe. This application was
+            built in group, and we use the agile methodologies like Scrum and Kanban."
             link="https://github.com/matheusgbl/trybe_projects/tree/master/online_store"
             label1="home page"
             label2="cart"

@@ -2,7 +2,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-export default function heroIntro() {
+export default function projects() {
   gsap.from('.home-projects-text', {
     x: -500,
     duration: 2,

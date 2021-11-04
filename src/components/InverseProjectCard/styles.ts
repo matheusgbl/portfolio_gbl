@@ -17,14 +17,44 @@ export const Card = styled.div`
 export const CardFirstContent = styled.div`
   width: 50%;
   height: 70vh;
+  border-top-left-radius: 2.5vw;
+  border-bottom-left-radius: 2.5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #333;
+  position: relative;
+
+  .project-image-Login {
+    display: flex;
+    margin-left: auto;
+    height: 100%;
+  }
+
+  .project-image-user.dashboard,
+  .project-image-barber.dashboard {
+    display: flex;
+    margin: auto;
+    height: 100%;
+  }
+`;
+
+export const RadioSelector = styled.div`
+  width: 100%;
+  margin-top: 20px;
+`;
+
+export const CardSecondContent = styled.div`
+  width: 50%;
+  height: 70vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #000;
-  border-top-left-radius: 2.5vw;
+  border-top-right-radius: 2.5vw;
+  border-bottom-right-radius: 2.5vw;
   border: 2px solid #333;
-  border-bottom-left-radius: 2.5vw;
 
   .card__first-content__info {
     padding: 6.5vw 5vw 6.7vw 4.9vw;
@@ -74,72 +104,5 @@ export const CardFirstContent = styled.div`
     a {
       margin: 2.5vw 0;
     }
-  }
-`;
-
-export const RadioSelector = styled.div`
-  width: 100%;
-  margin-top: 20px;
-`;
-
-export const CardSecondContent = styled.div`
-  width: 50%;
-  height: 70vh;
-  border-top-right-radius: 2.5vw;
-  border-bottom-right-radius: 2.5vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border: 2px solid #333;
-  position: relative;
-
-  .project-image-info {
-    display: flex;
-    margin-left: auto;
-    width: 39.8vw;
-    height: 100%;
-  }
-  .project-image-Web {
-    display: flex;
-    margin-left: auto;
-    width: 39.75vw;
-    height: 100%;
-  }
-
-  .project-image-Region {
-    position: absolute;
-    inset: 0px;
-    box-sizing: border-box;
-    padding: 0px;
-    border: none;
-    margin: auto;
-    display: block;
-    width: 0px;
-    height: 0px;
-    min-width: 90%;
-    max-width: 90%;
-    min-height: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
-
-  .project-image-home {
-    width: 41vw;
-    display: flex;
-    margin-left: auto;
-    height: 100%;
-  }
-
-  .project-image-cart {
-    width: 40vw;
-    display: flex;
-    margin: auto;
-    height: 100%;
-  }
-
-  .project-image-order {
-    display: flex;
-    margin: auto;
-    height: 100%;
   }
 `;

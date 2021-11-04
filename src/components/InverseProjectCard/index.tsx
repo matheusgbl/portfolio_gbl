@@ -22,7 +22,7 @@ type CardProps = {
   img3: string;
 };
 
-export const ProjectCard: React.FC<CardProps> = ({
+export const InverseProjectCard: React.FC<CardProps> = ({
   title,
   techs,
   description,
@@ -55,7 +55,18 @@ export const ProjectCard: React.FC<CardProps> = ({
   return (
     <Container>
       <Card>
-        <CardFirstContent>
+        <CardFirstContent
+          style={{ backgroundColor: `${bg === 1 ? '#6094aa' : '#77411D'}` }}>
+          <div className="card__second-content__info">
+            <img
+              sizes="50vw"
+              className={`project-image-${value}`}
+              src={img}
+              alt="Project preview"
+            />
+          </div>
+        </CardFirstContent>
+        <CardSecondContent>
           <div className="card__first-content__info">
             <h1>{title}</h1>
             <p className="card-techs">Techs: {techs}</p>
@@ -134,17 +145,6 @@ export const ProjectCard: React.FC<CardProps> = ({
                 </RadioGroup>
               </FormControl>
             </RadioSelector>
-          </div>
-        </CardFirstContent>
-        <CardSecondContent
-          style={{ backgroundColor: `${bg === 1 ? '#6094aa' : '#77411D'}` }}>
-          <div className="card__second-content__info">
-            <img
-              sizes="50vw"
-              className={`project-image-${value}`}
-              src={img}
-              alt="Project preview"
-            />
           </div>
         </CardSecondContent>
       </Card>

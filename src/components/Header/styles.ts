@@ -43,8 +43,10 @@ export const Container = styled.div`
     letter-spacing: 0.1rem;
     font-family: ${theme.dsoulsFont}, sans-serif;
 
-    & > p {
-      margin-left: 40px;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      margin-left: 20px;
 
       &:hover {
         cursor: pointer;
@@ -60,7 +62,7 @@ export const Container = styled.div`
         }
       }
       & > a {
-        margin-left: 15px;
+        margin-left: 25px;
       }
     }
   }
