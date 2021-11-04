@@ -6,3 +6,6 @@ This is my personal portfólio.
 - Typescript
 - React
 - GSAP
+
+### Live
+https://portfolio-gbl.vercel.app/
